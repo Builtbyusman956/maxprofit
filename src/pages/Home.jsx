@@ -3,6 +3,7 @@ import Hero from '../components/home/Hero'
 
 const TrustBar     = lazy(() => import('../components/home/TrustBar'))
 const Stats        = lazy(() => import('../components/home/Stats'))
+const Packages     = lazy(() => import('../components/home/Packages'))
 const VideoReviews = lazy(() => import('../components/home/VideoReviews'))
 const FAQ          = lazy(() => import('../components/home/FAQ'))
 
@@ -18,19 +19,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Suspense fallback={<SectionLoader />}>
-        <TrustBar />
-      </Suspense>
-      <Suspense fallback={<SectionLoader />}>
-        <Stats />
-      </Suspense>
-      <Suspense fallback={<SectionLoader />}>
-        <VideoReviews />
-      </Suspense>
-      <Suspense fallback={<SectionLoader />}>
-        <FAQ />
-      </Suspense>
-      {/* Packages, Portfolio preview, BookingCTA — coming next */}
+      <Suspense fallback={<SectionLoader />}><TrustBar /></Suspense>
+      <Suspense fallback={<SectionLoader />}><Stats /></Suspense>
+      <Suspense fallback={<SectionLoader />}><Packages /></Suspense>
+      <Suspense fallback={<SectionLoader />}><VideoReviews /></Suspense>
+      <Suspense fallback={<SectionLoader />}><FAQ /></Suspense>
+      {/* Portfolio preview, BookingCTA — coming next */}
     </>
   )
 }

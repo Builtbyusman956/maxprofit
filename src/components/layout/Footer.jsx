@@ -148,7 +148,7 @@ export default function Footer() {
       <div className="border-t border-[#F5EDE4]/05 mt-4 relative z-10">
         <div className="max-w-[1200px] mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[#8C7B6E] text-xs">
-            © {year} BrandBoost. All rights reserved.
+            © {year} Maxprofit. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             <a href="#" className="text-[#8C7B6E] hover:text-[#C4A98A] text-xs transition-colors duration-200">
