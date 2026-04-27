@@ -67,7 +67,7 @@ export const packages = [
     delivery: '14–21 days',
     popular: false,
     cta: 'Book a Call',
-    ctaType: 'call', 
+    ctaType: 'call',
     color: '#F5A623',
     features: [
       'Initial consultation & strategy session',
