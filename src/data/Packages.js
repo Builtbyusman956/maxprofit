@@ -11,7 +11,7 @@ export const packages = [
     delivery: '5–7 days',
     popular: false,
     cta: 'Buy Now',
-    ctaType: 'pay', // direct payment
+    ctaType: 'pay',
     color: '#F5A623',
     features: [
       '5 custom pages',
@@ -67,7 +67,7 @@ export const packages = [
     delivery: '14–21 days',
     popular: false,
     cta: 'Book a Call',
-    ctaType: 'call', // discovery call, no direct payment
+    ctaType: 'call', 
     color: '#F5A623',
     features: [
       'Initial consultation & strategy session',
