@@ -3,7 +3,9 @@ const router   = express.Router()
 const axios    = require('axios')
 const { Resend } = require('resend')
 
-const resend     = new Resend(process.env.RESEND_API_KEY)
+const resend = process.env.RESEND_API_KEY 
+  ? new Resend(process.env.RESEND_API_KEY) 
+  : null
 const FLW_SECRET = process.env.FLW_SECRET_KEY
 const FLW_BASE   = 'https://api.flutterwave.com/v3'
 
