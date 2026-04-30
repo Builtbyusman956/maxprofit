@@ -5,6 +5,7 @@ import {
   RiSearchEyeLine,
   RiSmartphoneLine,
   RiMailSendLine,
+  RiYoutubeLine,
 } from 'react-icons/ri'
 
 export const services = [
@@ -27,13 +28,23 @@ export const services = [
     color: '#F5A623',
   },
   {
+    id: 7,
+    icon: RiYoutubeLine,
+    tag: 'YouTube Automation',
+    title: 'YouTube Automation',
+    desc: 'We handle the full YouTube automation process while you focus on your business — from content creation and editing to channel growth and monetisation.',
+    features: ['Channel setup & optimisation', 'Niche & content strategy', 'Script writing & editing', 'SEO titles, tags & thumbnails', 'Monetisation & sponsorship roadmap'],
+    color: '#E8631A',
+    highlight: true,
+  },
+  {
     id: 3,
     icon: RiLineChartLine,
     tag: 'Growth',
     title: 'Growth Funnels',
     desc: 'Strategic sales funnels designed to convert cold traffic into loyal buyers — from landing pages to email sequences and upsell flows.',
     features: ['Funnel strategy & mapping', 'Landing page design', 'Email automation setup', 'Upsell & cross-sell flows', 'Conversion tracking'],
-    color: '#E8631A',
+    color: '#F5A623',
   },
   {
     id: 4,
@@ -42,7 +53,7 @@ export const services = [
     title: 'Social Media Marketing',
     desc: 'Content strategy, creatives, and management across Instagram, TikTok, and Facebook that build community and drive real sales.',
     features: ['Platform strategy', 'Content calendar', 'Creative production', 'Community management', 'Performance reporting'],
-    color: '#F5A623',
+    color: '#E8631A',
   },
   {
     id: 5,
@@ -51,7 +62,7 @@ export const services = [
     title: 'SEO & Paid Ads',
     desc: 'Organic search optimisation plus Meta and Google ad campaigns engineered to bring targeted buyers to your store every single day.',
     features: ['Keyword research & on-page SEO', 'Technical SEO audit', 'Meta (Facebook/Instagram) ads', 'Google Shopping campaigns', 'Monthly reporting'],
-    color: '#E8631A',
+    color: '#F5A623',
   },
   {
     id: 6,
@@ -60,6 +71,6 @@ export const services = [
     title: 'Email Marketing',
     desc: 'Klaviyo flows and campaigns that recover abandoned carts, nurture leads, and turn one-time buyers into repeat customers.',
     features: ['Klaviyo account setup', 'Welcome & abandon flows', 'Promotional campaigns', 'List segmentation', 'A/B testing'],
-    color: '#F5A623',
+    color: '#E8631A',
   },
 ]

@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <Suspense fallback={<SectionLoader />}><TrustBar /></Suspense>
       <Suspense fallback={<SectionLoader />}><Stats /></Suspense>
-      <Suspense fallback={<SectionLoader />}><Packages /></Suspense>
+      <Suspense fallback={<SectionLoader />}><Packages /></Suspense> 
       <Suspense fallback={<SectionLoader />}><VideoReviews /></Suspense>
       <Suspense fallback={<SectionLoader />}><FAQ /></Suspense>
       {/* Portfolio preview, BookingCTA — coming next */}

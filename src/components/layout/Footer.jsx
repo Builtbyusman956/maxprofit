@@ -3,20 +3,18 @@ import {
   RiShoppingBag3Line,
   RiInstagramLine,
   RiTiktokLine,
-  RiTwitterXLine,
-  RiYoutubeLine,
-  RiLinkedinBoxLine,
+  RiWhatsappLine,
+  RiFacebookBoxLine,
   RiArrowRightUpLine,
   RiMailLine,
   RiMapPinLine,
 } from 'react-icons/ri'
 
 const socials = [
-  { icon: <RiInstagramLine />,   href: '#', label: 'Instagram' },
-  { icon: <RiTiktokLine />,      href: '#', label: 'TikTok' },
-  { icon: <RiTwitterXLine />,    href: '#', label: 'X / Twitter' },
-  { icon: <RiYoutubeLine />,     href: '#', label: 'YouTube' },
-  { icon: <RiLinkedinBoxLine />, href: '#', label: 'LinkedIn' },
+  { icon: <RiInstagramLine />,    href: 'https://www.instagram.com/maxprofit_150?igsh=MW1iZjgwenBzdjBudQ==', label: 'Instagram' },
+  { icon: <RiTiktokLine />,       href: 'https://tiktok.com/@maxprofit150',                                   label: 'TikTok' },
+  { icon: <RiFacebookBoxLine />,  href: 'https://www.facebook.com/share/1DqDxNT1Ju/',                        label: 'Facebook' },
+  { icon: <RiWhatsappLine />,     href: 'https://wa.me/message/EE3K7MDUS4FVK1',                              label: 'WhatsApp' },
 ]
 
 const footerLinks = {
@@ -66,7 +64,7 @@ export default function Footer() {
           </p>
 
           <a
-            href="mailto:hello@brandboost.com"
+            href="mailto:hello@maxprofit.com"
             className="flex items-center gap-2 text-[#C4A98A] hover:text-[#E8631A] text-sm transition-colors duration-200"
           >
             <RiMailLine className="text-[#E8631A] flex-shrink-0" />

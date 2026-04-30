@@ -8,6 +8,11 @@ import {
   RiStarFill,
   RiHeartFill,
 } from 'react-icons/ri'
+import max1 from '../../assets/max1.jpeg'
+import max2 from '../../assets/max2.jpeg'
+import max3 from '../../assets/max3.jpeg'
+import max4 from '../../assets/max4.jpeg'
+
 
 // ── Reel data ─────────────────────────────────────────────────
 // Instagram doesn't allow direct embedding on external sites.
@@ -15,18 +20,19 @@ import {
 const reels = [
   {
     id: 1,
-    url: 'https://www.instagram.com/reel/DHFLb-wN6pR/?igsh=cmo3eTMzaXU3MHJy',
-    thumbnail: 'https://picsum.photos/seed/reel1/400/700',
+    url: 'https://www.instagram.com/reel/DJoUa2lo-W-/?igsh=MWd0Z2c2bGl4MWZrZg==',
+    thumbnail: max2,
     title: 'How I Built a $10K/Month Shopify Store',
     caption: 'From zero to $10K/month — the exact strategy I used to launch and scale a brand new Shopify store.',
     likes: '4.2K',
     tag: 'Case Study',
     tagColor: '#E8631A',
+
   },
   {
     id: 2,
     url: 'https://www.instagram.com/reel/DK0BJ1_x1EZ/?igsh=ODdubDU4YTEybW54',
-    thumbnail: 'https://picsum.photos/seed/reel2/400/700',
+    thumbnail: max1,
     title: 'Brand Identity Mistakes Killing Your Sales',
     caption: '3 brand identity mistakes most entrepreneurs make that silently kill conversions — and how to fix them.',
     likes: '6.8K',
@@ -35,8 +41,8 @@ const reels = [
   },
   {
     id: 3,
-    url: 'https://www.instagram.com/reel/DG_kpDoB29u/?igsh=c3JxZXF2eXRtdmY=',
-    thumbnail: 'https://picsum.photos/seed/reel3/400/700',
+    url: 'https://www.instagram.com/reel/DKtrMlKurTb/?igsh=eWZobXdpZ3cwaDM3',
+    thumbnail: max3,
     title: 'Shopify SEO That Actually Works in 2025',
     caption: 'The SEO strategy that got my client 340% more organic traffic in 90 days — no paid ads needed.',
     likes: '9.1K',
@@ -45,8 +51,8 @@ const reels = [
   },
   {
     id: 4,
-    url: 'https://www.instagram.com/reel/DHmccYyxd_h/?igsh=YjdiY3NoZHY5ajl0',
-    thumbnail: 'https://picsum.photos/seed/reel4/400/700',
+    url: 'https://www.instagram.com/reel/DTV8D3WjdZb/?igsh=MXQwZ3R6MTFseXhieA==',
+    thumbnail: max4,
     title: 'The Growth Funnel That Changed Everything',
     caption: 'One funnel. $85K in 60 days. Here\'s exactly how the growth funnel I built for a client worked.',
     likes: '7.3K',

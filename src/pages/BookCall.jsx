@@ -171,16 +171,26 @@ export default function BookCall() {
     return e
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
     setLoading(true)
-    // TODO: wire up to email service / CRM / Calendly
-    setTimeout(() => {
-      setLoading(false)
+
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:4000'}/api/payments/booking`, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Something went wrong')
       setSubmitted(true)
-    }, 1800)
+    } catch (err) {
+      setErrors({ submit: err.message })
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
