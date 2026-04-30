@@ -8,12 +8,20 @@ const app  = express()
 const PORT = process.env.PORT || 4000
 
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL,
-    'http://localhost:5173',
-    'http://localhost:5174',
-  ],
-  methods: ['GET', 'POST'],
+  origin: function (origin, callback) {
+    const allowed = [
+      process.env.FRONTEND_URL,
+      'http://localhost:5173',
+      'http://localhost:5174',
+    ].filter(Boolean)
+
+    if (!origin || allowed.includes(origin)) {
+      callback(null, true)
+    } else {
+      callback(new Error(`CORS blocked: ${origin}`))
+    }
+  },
+  methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
 }))
 
@@ -38,4 +46,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`✅ MaxProfit backend running on port ${PORT}`)
   console.log(`   Health: http://localhost:${PORT}/health`)
+  console.log(`   Allowed origins: ${[process.env.FRONTEND_URL, 'http://localhost:5173', 'http://localhost:5174'].filter(Boolean).join(', ')}`)
 })
