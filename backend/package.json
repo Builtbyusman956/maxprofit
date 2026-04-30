@@ -1,7 +1,6 @@
 {
   "name": "maxprofit-backend",
   "version": "1.0.0",
-  "description": "MaxProfit backend - Flutterwave payment processing",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
