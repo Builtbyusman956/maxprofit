@@ -43,7 +43,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' })
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`✅ MaxProfit backend running on port ${PORT}`)
   console.log(`   Health: http://localhost:${PORT}/health`)
   console.log(`   Allowed origins: ${[process.env.FRONTEND_URL, 'http://localhost:5173', 'http://localhost:5174'].filter(Boolean).join(', ')}`)
