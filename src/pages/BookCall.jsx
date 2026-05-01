@@ -16,8 +16,9 @@ import {
   RiShieldCheckLine,
   RiStarFill,
   RiCloseLine,
+  RiFacebookBoxLine,
 } from 'react-icons/ri'
-import { SiShopify } from 'react-icons/si'
+import { SiShopify, SiTiktok } from 'react-icons/si'
 
 // ── Data ──────────────────────────────────────────────────────
 const services = [
@@ -313,7 +314,7 @@ export default function BookCall() {
                 </h3>
                 <div className="flex flex-col gap-3">
                   <a
-                    href="https://wa.me/message/your-whatsapp"
+                    href="https://wa.me/message/EE3K7MDUS4FVK1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-[#1A1410] border border-[#F5EDE4]/06 hover:border-emerald-400/30 rounded-xl px-4 py-3 transition-all duration-200 group"
@@ -329,7 +330,7 @@ export default function BookCall() {
                   </a>
 
                   <a
-                    href="https://www.instagram.com/maxprofit_150"
+                    href="https://www.instagram.com/maxprofit_150?igsh=MW1iZjgwenBzdjBudQ=="
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 bg-[#1A1410] border border-[#F5EDE4]/06 hover:border-[#E8631A]/30 rounded-xl px-4 py-3 transition-all duration-200 group"
@@ -345,15 +346,33 @@ export default function BookCall() {
                   </a>
 
                   <a
-                    href="mailto:hello@maxprofit.com"
-                    className="flex items-center gap-3 bg-[#1A1410] border border-[#F5EDE4]/06 hover:border-[#F5A623]/30 rounded-xl px-4 py-3 transition-all duration-200 group"
+                    href="https://tiktok.com/@maxprofit150"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-[#1A1410] border border-[#F5EDE4]/06 hover:border-[#F5EDE4]/20 rounded-xl px-4 py-3 transition-all duration-200 group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-[#F5A623]/10 flex items-center justify-center text-[#F5A623] group-hover:scale-110 transition-transform">
-                      <RiMailLine className="text-lg" />
+                    <div className="w-9 h-9 rounded-lg bg-[#F5EDE4]/08 flex items-center justify-center text-[#F5EDE4] group-hover:scale-110 transition-transform">
+                      <SiTiktok className="text-base" />
                     </div>
                     <div>
-                      <p className="text-[#F5EDE4] font-semibold text-sm">Email Us</p>
-                      <p className="text-[#8C7B6E] text-xs">hello@maxprofit.com</p>
+                      <p className="text-[#F5EDE4] font-semibold text-sm">@maxprofit150</p>
+                      <p className="text-[#8C7B6E] text-xs">Follow us on TikTok</p>
+                    </div>
+                    <RiArrowRightUpLine className="ml-auto text-[#8C7B6E] group-hover:text-[#E8631A] transition-colors" />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/share/1DqDxNT1Ju/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-[#1A1410] border border-[#F5EDE4]/06 hover:border-blue-400/30 rounded-xl px-4 py-3 transition-all duration-200 group"
+                  >
+                    <div className="w-9 h-9 rounded-lg bg-blue-400/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                      <RiFacebookBoxLine className="text-lg" />
+                    </div>
+                    <div>
+                      <p className="text-[#F5EDE4] font-semibold text-sm">Facebook</p>
+                      <p className="text-[#8C7B6E] text-xs">Follow our Facebook page</p>
                     </div>
                     <RiArrowRightUpLine className="ml-auto text-[#8C7B6E] group-hover:text-[#E8631A] transition-colors" />
                   </a>
