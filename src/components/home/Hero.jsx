@@ -7,12 +7,13 @@ import {
   RiLineChartLine,
   RiStarFill,
   RiCheckboxCircleFill,
+  RiYoutubeLine,
 } from 'react-icons/ri'
 import { SiShopify } from 'react-icons/si'
 
 const badges = [
   { icon: <RiCheckboxCircleFill />, text: 'Shopify Partner' },
-  { icon: <RiCheckboxCircleFill />, text: '200+ Stores Built' },
+  { icon: <RiYoutubeLine />,        text: 'YouTube Automation' },
   { icon: <RiCheckboxCircleFill />, text: '$5M+ Revenue Generated' },
 ]
 
@@ -25,9 +26,9 @@ const floatingCards = [
     bg: 'bg-[#E8631A]/10',
   },
   {
-    icon: <RiLineChartLine />,
-    label: 'Brand Growth',
-    value: '+280% Traffic',
+    icon: <RiYoutubeLine />,
+    label: 'YouTube Growth',
+    value: '+430% Views',
     color: 'text-[#F5A623]',
     bg: 'bg-[#F5A623]/10',
   },
@@ -45,11 +46,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0A0806] pt-28 pb-20">
 
       {/* ── Background layers ── */}
-      {/* Radial glow top-left */}
       <div className="absolute top-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-[#E8631A]/8 blur-[120px] pointer-events-none" />
-      {/* Radial glow bottom-right */}
       <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#F5A623]/6 blur-[100px] pointer-events-none" />
-      {/* Grid overlay */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
@@ -57,7 +55,6 @@ export default function Hero() {
           backgroundSize: '60px 60px',
         }}
       />
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0806] to-transparent pointer-events-none z-10" />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10 w-full">
@@ -67,10 +64,14 @@ export default function Hero() {
           <div className="flex flex-col gap-7">
 
             {/* Top badge */}
-            <div className="flex items-center gap-2 w-fit">
+            <div className="flex flex-wrap items-center gap-2 w-fit">
               <span className="flex items-center gap-2 bg-[#1A1410] border border-[#E8631A]/25 text-[#F5EDE4] text-xs font-semibold px-4 py-2 rounded-full">
                 <SiShopify className="text-[#E8631A] text-sm" />
-                Shopify Expert & Brand Strategist
+                Shopify Expert
+              </span>
+              <span className="flex items-center gap-2 bg-[#1A1410] border border-[#E8631A]/25 text-[#F5EDE4] text-xs font-semibold px-4 py-2 rounded-full">
+                <RiYoutubeLine className="text-[#E8631A] text-sm" />
+                YouTube Automation
               </span>
             </div>
 
@@ -95,7 +96,6 @@ export default function Hero() {
                   >
                     Actually Sells
                   </span>
-                  {/* Underline squiggle */}
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
                     viewBox="0 0 200 8"
@@ -116,7 +116,7 @@ export default function Hero() {
 
             {/* Subtext */}
             <p className="text-[#C4A98A] text-lg leading-relaxed max-w-lg">
-              I help entrepreneurs launch and grow winning Shopify stores — from brand identity and store setup to growth funnels, SEO, and social media marketing that converts.
+              We help entrepreneurs launch winning Shopify stores <span className="text-[#F5EDE4] font-semibold">and</span> grow YouTube channels on autopilot — from brand identity and store setup to full YouTube automation, SEO, and marketing that converts.
             </p>
 
             {/* Trust badges */}
